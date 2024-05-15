@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Learning Center</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Your existing CSS styles */
+        .flashcard-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .flashcard {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            width: 300px; /* Adjust width as needed */
+        }
+
+        .flashcard img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px 5px 0 0; /* Rounded corners for top only */
+        }
+
+        .flashcard h3 {
+            margin-top: 0;
+        }
+
+        .flashcard p {
+            margin-bottom: 0;
+        }
+
+        /* Additional style for quiz questions */
+        .quiz-questions {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <!-- Your existing home section content -->
+    </section>
+
+    <section id="courses">
+        <h2>Our Courses</h2>
+        <div class="course-card">
+            <img src="72.jpg" alt="Course 1">
+            <h3>JAPANESE for Beginners</h3>
+            <p>Start your journey to becoming fluent in Japanese.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="course-card">
+            <img src="96.jpg" alt="Course 2">
+            <h3>Japanese to English Conversation</h3>
+            <p>Improve your Japanese language skills through conversation.</p>
+            <a href="#">Learn More</a>
+        </div>
+    </section>
+
+    <section id="quiz">
+        <h2>Vocabulary Quiz and Flashcards</h2>
+        <div class="flashcard-container">
+            <div class="flashcard">
+                <img src="chery chery lady.jpeg" alt="Flashcard 1">
+                <h3>Flashcard 1: Greetings</h3>
+                <p>Konnichiwa - Hello</p>
+                <p>Sayonara - Goodbye</p>
+                <p>Arigato - Thank you</p>
+            </div>
+            <div class="flashcard">
+                <img src="123456.jpg" alt="Flashcard 2">
+                <h3>Flashcard 2: Basic Phrases</h3>
+                <p>Hai - Yes</p>
+                <p>Iie - No</p>
+                <p>Sumimasen - Excuse me / I'm sorry</p>
+            </div>
+        </div>
+
+        
+        <!-- Quiz questions start here -->
+        <div class="quiz-questions">
+            <div class="quiz-question" data-answer="a">
+                <p>What is the Japanese word for "hello"? (1 pt)</p>
+                <ul class="options">
+                    <li><input type="radio" name="q1" value="a">Konnichiwa</li>
+                    <li><input type="radio" name="q1" value="b">Sayonara</li>
+                    <li><input type="radio" name="q1" value="c">Arigato</li>
+                </ul>
+            </div>
+            <div class="quiz-question" data-answer="b">
+                <p>Which word means "goodbye" in Japanese? (1 pt)</p>
+                <ul class="options">
+                    <li><input type="radio" name="q2" value="a">Konnichiwa</li>
+                    <li><input type="radio" name="q2" value="b">Sayonara</li>
+                    <li><input type="radio" name="q2" value="c">Arigato</li>
+                </ul>
+            </div>
+            <div class="quiz-question" data-answer="a">
+                <p>What is the Japanese word for "thank you"? (1 pt)</p>
+                <ul class="options">
+                    <li><input type="radio" name="q3" value="a">Arigato</li>
+                    <li><input type="radio" name="q3" value="b">Konnichiwa</li>
+                    <li><input type="radio" name="q3" value="c">Sayonara</li>
+                </ul>
+            </div>
+            <div class="quiz-question" data-answer="c">
+                <p>Which word means "yes" in Japanese? (1 pt)</p>
+                <ul class="options">
+                    <li><input type="radio" name="q4" value="a">Arigato</li>
+                    <li><input type="radio" name="q4" value="b">Konnichiwa</li>
+                    <li><input type="radio" name="q4" value="c">Hai</li>
+                </ul>
+            </div>
+        </div>
+        
+        
+        
+        
+        <button id="submit-quiz">Submit</button>
+        <div id="quiz-results"></div>
+    </section>
+    <section id="feedback">
+        <h2>Feedback</h2>
+        <form id="feedback-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="feedback">Feedback:</label><br>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea><br><br>
+            
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </section>
+    
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are passionate about language learning and dedicated to helping you achieve your goals.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or inquiries, please feel free to contact us:</p>
+        <address>
+            <p>Email: <a href="mailto:info@example.com">ujjwal2391.be23@chitkara.edu.in</a></p>
+            <p>Phone: <a href="tel:+123456789">108</a></p>
+        </address>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Language Learning Center</p>
+    </footer>
+
+    <audio id="thank-you-audio" src="JAP.mp3"></audio>
+
+    <button id="play-audio-btn">Play Audio</button>
+
+    <script>
+        var audio = document.getElementById('thank-you-audio');
+        var playBtn = document.getElementById('play-audio-btn');
+        
+        playBtn.addEventListener('click', function() {
+            audio.play();
+        });
+    </script>
+
+    <script>
+        document.getElementById("submit-quiz").addEventListener("click", function() {
+            var totalPoints = 0;
+            var questions = document.querySelectorAll(".quiz-question");
+            questions.forEach(function(question) {
+                var selectedAnswer = question.querySelector("input:checked").value;
+                var correctAnswer = question.getAttribute("data-answer");
+                if (selectedAnswer === correctAnswer) {
+                    totalPoints++;
+                }
+            });
+            document.getElementById("quiz-results").innerText = "You scored " + totalPoints + " out of " + questions.length + " points.";
+        });
+    </script>
+    <script>
+        document.getElementById("feedback-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var feedback = document.getElementById("feedback").value;
+            
+            // Here you can perform further actions, like sending the feedback data to a server
+            // For now, let's log the feedback to the console
+            console.log("Name: " + name);
+            console.log("Email: " + email);
+            console.log("Feedback: " + feedback);
+            
+            // Optionally, you can clear the form after submission
+            document.getElementById("feedback-form").reset();
+            
+            // You can also display a confirmation message to the user
+            alert("Thank you for your feedback!");
+        });
+    </script>s
+    
+</body>
+</html>
