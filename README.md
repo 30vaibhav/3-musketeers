@@ -13,3 +13,4 @@ for ownership,contributions and timings refer to the following link:
 https://1drv.ms/x/c/f1a2ab1fc684b049/Ecm9w7qq0ipKj1hiDikGnCQB_V2Dv0LfQ2eK3brXBT3E0g?e=go2mfb
 our basic plan:
 1) Release of version 1.0 upto 4/5/2024
+2) Release of version 2 upto 15/05/2024 12:30 pm.
